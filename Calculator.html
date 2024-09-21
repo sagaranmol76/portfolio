@@ -1,0 +1,78 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+     <title>Calculator</title>
+     <meta name="viewport" content="width=device-width,initial scale = 1.0">
+     <link rel="stylesheet" href="calculator.css" class="stylesheet">
+        </head>
+        <body>
+        <div class="Title">Calculator</div>
+        <div class="box">
+        <div class="display"></div>
+        <div class="keys">
+         <button onclick="ac()"  class="input" id="clear">AC</button>    
+         <button onclick="ins('(')" class="input" id="paran1">(</button>
+         <button onclick="ins(')')" class="input" id="paran2">)</button>
+         <button onclick="ins('+')" class="input" id="plus">+</button>      
+         <button onclick="ins('9')" class="nums" id="9">9</button>       
+         <button onclick="ins('8')" class="nums" id="8">8</button>       
+         <button onclick="ins('7')" class="nums" id="7">7</button>       
+         <button onclick="ins('-')" class="input" id="minus">-</button>       
+         <button onclick="ins('6')" class="nums" id="6">6</button>       
+         <button onclick="ins('5')" class="nums" id="5">5</button>       
+         <button onclick="ins('4')" class="nums" id="4">4</button>       
+         <button onclick="ins('*')" class="input" id="mult">x</button>       
+         <button onclick="ins('3')" class="nums" id="3">3</button>       
+         <button onclick="ins('2')" class="nums" id="2">2</button>       
+         <button onclick="ins('1')" class="nums" id="one">1</button>       
+         <button onclick="ins('/')" class="input" id="divide">÷</button>       
+         <button onclick="ins('.')" class="input" id="dec">.</button>       
+         <button onclick="ins('0')" class="nums" id="zero">0</button> 
+         <button onclick="pre()" class="input" id="answer">Ans</button>      
+         <button onclick="del()" class="input" id="del">DEL</button>
+         <button onclick="equal()" class="input" id="eq">=</button>          
+         </div>
+       
+          <footer>
+            Copyright © Sagaranmolofficial
+            <img src="https://prd-hectv-wp-media.s3.us-east-2.amazonaws.com/wp-content/uploads/2021/03/follow-us-on-social-768x432.png" height="60" width="120">
+           </footer>
+         </body>
+        </html>
+
+        <script>
+            alert("Subscribe to Sagaranmolofficial If you like it :)")
+              var display = document.getElementsByClassName("display")[0];
+              var Ans = '';
+              function ins(arg){
+                  display.innerHTML += arg;
+              }
+              function equal(){
+              Ans = '';
+               var onscreen=display.innerHTML;
+                  if(onscreen != '' && (!onscreen.endsWith('-') && !onscreen.endsWith('+') && !onscreen.endsWith('*') && !onscreen.endsWith('/'))) {
+               var value = '';
+                 value += eval(display.textContent);
+                 for(var i=0;i<value.length;i++){
+                     if(i>15){break;}
+                     Ans += value.charAt(i);
+                 }
+                  display.innerHTML = Ans;
+                  navigator.vibrate(150);
+              }  
+               }
+                function pre(){
+                    display.innerHTML += Ans;
+                }
+                function ac(){
+                    display.innerHTML ='';
+                }
+               function del(){
+                   var str = display.textContent;
+                   let str2 = '';
+                   for(var i=0;i<str.length-1;i++){
+                       str2 = str2 + str.charAt(i);
+                   }
+                   display.innerHTML = str2;
+               }            
+            </script>

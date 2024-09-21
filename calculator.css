@@ -1,0 +1,99 @@
+* {
+    margin:0px; 
+    padding:0px;
+    box-sizing:border-box;
+ }
+ body{
+     width:100vw;
+     height:100vh;
+     background-color: #000000d4;
+ }
+ .Title{
+     font-size:50px;
+     border:none;
+     text-align:center;
+     position:relative;
+     top:15px;
+     font-weight:700;
+     color:rgb(255, 255, 255);
+     text-shadow:0px 3px 3px black;  
+ }
+ .box{
+     border:none;
+     width:82vw;
+     height:80vh;
+     position:absolute;
+     top:10vh;
+     left:9vw;
+     background-color:#000000;
+     padding:5px;
+     border-radius:20px;
+     border-color: black;
+     border-style: solid;
+ }
+ .display{
+     background-color:rgb(41, 1, 1);
+     padding-right:20px;
+     padding-bottom:2px;
+     border-radius:20px;
+     height:18%;
+     border-bottom:1px solid cyan;
+     margin:2px;
+     display:flex;
+     flex-direction:column;
+     justify-content:flex-end;
+     text-align:right;
+     vertical-align:bottom;
+     font-size:25px;
+     color:white;
+     
+ }
+ .keys{
+     height:80%;
+     border:none;
+     margin:2px;
+     display:flex;
+     justify-content:space-evenly;
+     align-items:center;
+     flex-wrap:wrap;
+     border-color: black;
+     border-style: solid;
+     
+ }
+ .input, .nums{
+     width:24%;
+     height:16%;
+     margin:1px;
+     border:none;
+     border-radius:10px;
+     font-size:20px;
+     background-color:#0ca4c9;
+     border-color: black;
+     border-style: solid;
+ }
+  #eq {
+     border-radius:10px;
+     flex:1;
+     font-weight:900;
+     background-color:#8ccc16;
+     color:black;
+     font-size:30px;
+     border-color: black;
+     border-style: solid;
+ }
+ #clear,#del,#answer{
+     background-color:orange;
+     color:black;
+ }
+ .nums{
+     background-color:cyan;
+ }
+ .input{
+     color:white;
+ }
+ .input:active,.nums:active{
+     box-shadow:0px 0px 5px white;
+ }
+ footer{
+color: bisque;
+ }

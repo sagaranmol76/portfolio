@@ -1800,6 +1800,7 @@
  #portfolio .folio-item {
     width:fit-content;
     padding:20px;
+     gap:100px;
      position: relative;
      overflow: hidden;
  }
@@ -1851,8 +1852,8 @@
      margin-bottom: 0;
  }
  #portfolio .folio-types {
-     margin: 0;
-     padding: 0;
+     margin: 10;
+     padding: 10;
      text-transform: uppercase;
      font-family: "poppins-regular", sans-serif;
      font-size: 1.2rem;
